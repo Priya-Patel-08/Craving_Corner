@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craving Corner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="topnav" id="myTopnav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#booking">Book a Seat</a>
+        <a href="#visit">Visit Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="home" class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to Craving Corner</h1>
+            <p><b>Escape the rush and enjoy handcrafted drinks, delicious meals, and a cosy atmosphere made for conversations and comfort.</b>
+            </p>
+        </div>
+    </div>
+    <div id="about">
+        <h1 style="color: rgb(17, 24, 34); text-align: center;">About Us</h1>
+        <p style="color: rgb(107, 114, 128); text-align: center;">
+            We opened our doors in 2026 with one simple idea: good food, made with love, served with a smile. <br> 
+            Every dish on our menu is prepared fresh each morning. <br>
+            Whether you're catching up with friends, studying over coffee, or enjoying family time, we are here to make every visit memorable.
+        </p>
+    </div>
+    <hr>
+    <div id="menu">
+        <h2 style="color: rgb(17, 24, 34); text-align: center;">Our Menu</h2>
+        <p style="color: rgb(107, 114, 128); text-align: center;"">Explore a menu filled with fresh ingredients, rich flavours, and dishes crafted to satisfy every craving.</p>
+        <table border="1" class="center-table" style="color: black; margin-left: auto; margin-right: auto;">
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody style="color: rgb(79, 101, 150);">
+                <tr>
+                    <td>Garlic Bread</td>
+                    <td><img src="./images/Garlic Bread.jpg" alt="Garlic Bread Image"></td>
+                    <td>Toasted with herb butter</td>
+                    <td>Starters</td>
+                    <td>Rs. 120</td>
+                </tr>
+                <tr>
+                    <td>Veg Spring Rolls</td>
+                    <td><img src="./images/Veg Spring Roll.jpg" alt="Veg Spring Roll Image"></td>
+                    <td>Crispy, served with dip</td>
+                    <td>Starters</td>
+                    <td>Rs. 150</td>
+                </tr>
+                <tr>
+                    <td>Paneer Tikka Wrap</td>
+                    <td><img src="./images/Paneer tikka wrap.png" alt="Paneer tikka wrap Image"></td>
+                    <td>Grilled paneer in a soft roll</td>
+                    <td>Mains</td>
+                    <td>Rs. 220</td>
+                </tr>
+                <tr>
+                    <td>Margherita Pizza</td>
+                    <td><img src="./images/Margherita pizza.jpg" alt="Margherita pizza Image"></td>
+                    <td>Classic tomato and cheese</td>
+                    <td>Mains</td>
+                    <td>Rs. 280</td>
+                </tr>
+                <tr>
+                    <td>Cold Coffee</td>
+                    <td><img src="./images/Cold coffee.png" alt="Cold coffee Image"></td>
+                    <td>Blended with ice cream</td>
+                    <td>Drinks</td>
+                    <td>Rs. 110</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Brownie</td>
+                    <td><img src="./images/Chocolate brownie.png" alt="Chocolate Brownie Image"></td>
+                    <td>Warm, with vanilla scoop</td>
+                    <td>Desserts</td>
+                    <td>Rs. 160</td>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+     <hr>
+     <div style=" text-align: center;">
+        <h2>Today's Specials</h2>
+        <ul style="color: rgb(107, 114, 128); display: table; margin-left:  auto; margin-right: auto;">
+            <li>Buy 1 Get 1 on Cold Coffee</li>
+            <li>Free brownie with any pizza</li>
+            <li>Student combo at Rs. 199</li>
+        </ul>
+        <h2>How to Order</h2>
+        <ol style="color: rgb(107, 114, 128); display: table; margin-left:  auto; margin-right: auto;">
+            <li>Pick a table and sit down</li>
+            <li>Scan the menu</li>
+            <li>Tell your order to the waiter</li>
+            <li>Pay at the counter</li>
+        </ol>
+    </div>
+    <hr>
+    <div id="booking">
+        <h2 style="color: rgb(17, 24, 34); text-align: center;">Book a Table</h2>
+        <form style="text-align: center;">
+            <p>
+                <label>Full Name:</label>
+                <br>
+                <input type="text" name="fullname" placeholder="Enter your full name">
+            </p>
+            <p>
+                <label>Email:</label>
+                <br>
+                <input type="email" name="email" placeholder="Enter valid email">
+            </p>
+            <p>
+                <label>Phone Number:</label>
+                <br>
+                <input type="number" name="phone" placeholder="Enter phone number">
+            </p>
+            <p>
+                <label>Date:</label>
+                <br>
+                <input type="date" name="date">
+            </p>
+            <p>
+                <label>Time:</label>
+                <br>
+                <input type="time" name="time">
+            </p>
+            <p>
+                <label>Number of Guests:</label>
+                <br>
+                <select name="guests">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4 or more</option>
+                </select>
+            </p>
+            <p>
+                <label>Seating Preference:</label>
+                <br>
+                <input type="radio" name="seating" value="indoor"> Indoor
+                <input type="radio" name="seating" value="outdoor"> Outdoor
+            </p>
+            <p>
+                <label>Add-ons:</label>
+                <br>
+                <input type="checkbox" name="addon" value="cake"> Birthday cake
+                <input type="checkbox" name="addon" value="highchair"> High chair
+                <input type="checkbox" name="addon" value="window"> Window seat
+            </p>
+            <p>
+                <label>Special Requests:</label>
+                <br>
+                <textarea name="requests" rows="4" cols="30"></textarea>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </div>
+    <hr>
+    <div id="visit">
+        <h2 style="color: antiquewhite;">Visit Us</h2>
+        <h3 style="color: antiquewhite;">Opening Hours</h3>
+        <ul style="color: rgb(107, 114, 128); display: table; margin-left:  auto; margin-right: auto;">
+            <li><b>Monday to Friday: 9:00 AM - 10:00 PM</li>
+            <li>Saturday and Sunday: 8:00 AM - 11:00 PM</b></li>
+        </ul>
+        <div class="contact">
+            <div class="contact-box">
+            <h3>📍 Location</h3>
+            <p>
+                123 Market Road<br>Mumbai
+            </p>
+        </div>
+        <div class="contact-box">
+            <h3>📞 Call Us</h3>
+            <p>
+                98765 43210
+            </p>
+        </div>
+        <div class="contact-box">
+            <h3>✉ Email</h3>
+            <p>
+                hello@cravingscorner.com
+            </p>
+        </div>
+    </div>
+    <div class="social">
+        <h2 style="color: antiquewhite;">Follow Us</h2>
+        <p style="color: rgb(107, 114, 128); display: table; margin-left:  auto; margin-right: auto;">
+            Stay connected for new dishes, special offers, and café moments.
+        </p>
+        <a href="#" class="social-link">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="#" class="social-link">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="social-link">
+            <i class="fa fa-youtube-play"></i>
+        </a>
+    </div>
+    <p style="color: rgb(107, 114, 128);">© 2026 Cravings Corner. All rights reserved.</p>
+    </div>
+    <script>
+    function navFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    } 
+    </script>
+</body>
+</html>
